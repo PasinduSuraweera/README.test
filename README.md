@@ -6,7 +6,7 @@ As an undergrad student passionate about building secure and scalable systems, I
 
 Integration challenges—like exposing APIs safely, routing data between heterogeneous services, and controlling user access across multiple applications—are at the heart of modern enterprise architecture. A single e-commerce transaction might touch a dozen services: inventory management, payment processing, fraud detection, shipping logistics, and customer notifications. Each has different protocols, data formats, and security requirements. Without proper integration infrastructure, this complexity becomes unmanageable technical debt.
 
-That's why I decided to immerse myself in **WSO2's open-source platform**, a leading suite of tools trusted by enterprises worldwide for identity management, API governance, and integration. Organizations like AT&T, Samsung, and Ryanair rely on WSO2 to handle billions of transactions. What makes WSO2 particularly compelling is its commitment to open standards (OAuth2, OIDC, SAML, OpenAPI) and complete transparency—you can inspect, modify, and extend every component. This contrasts sharply with proprietary solutions that lock you into vendor-specific ecosystems.
+That's why I decided to immerse myself in **WSO2's open-source platform**, a leading suite of tools trusted by enterprises worldwide for identity management, API governance, and integration. What makes WSO2 particularly compelling is its commitment to open standards (OAuth2, OIDC, SAML, OpenAPI) and complete transparency—you can inspect, modify, and extend every component. This contrasts sharply with proprietary solutions that lock you into vendor-specific ecosystems.
 
 ## The Learning Journey: Three Projects, One Ecosystem
 
