@@ -12,17 +12,17 @@ That's why I decided to immerse myself in **WSO2's open-source pruducts**, a lea
 
 To truly understand these tools beyond surface-level tutorials, I built **three production-realistic projects**:
 
-1. **API Lifecycle Management** with WSO2 API Manager—handling everything from design and security to throttling and analytics
-2. **Intelligent Message Routing** with WSO2 Micro Integrator—implementing enterprise integration patterns for service mediation
-3. **Secure Authentication & Authorization** with WSO2 Identity Server and Next.js—building a modern, role-based access control system
+1. **API Lifecycle Management** with WSO2 API Manager - handling everything from design and security to throttling and analytics
+2. **Intelligent Message Routing** with WSO2 Micro Integrator - implementing enterprise integration patterns for service mediation
+3. **Secure Authentication & Authorization** with WSO2 Identity Server and Next.js - building a modern, role-based access control system
 
 Each project simulates real-world scenarios I've encountered in research: how do you protect legacy services with modern OAuth2 security? How do you decouple tightly-coupled systems? How do you implement single sign-on across multiple applications without reinventing authentication?
 
-This wasn't just about following documentation—I aimed to replicate realistic workflows, from initial configuration and custom code integration to **testing system boundaries** like rate limits, concurrent loads, and error scenarios. I wrote automated tests, load generation scripts, and comprehensive documentation for each repository. The goal was simple: if I handed these projects to a colleague, they should be able to understand and run them in under 30 minutes.
+This wasn't just about following documentation. I aimed to replicate realistic workflows, from initial configuration and custom code integration to **testing system boundaries** like rate limits, concurrent loads, and error scenarios. I wrote automated tests, load generation scripts, and comprehensive documentation for each repository. The goal was simple: if I handed these projects to a colleague, they should be able to understand and run them in under 30 minutes.
 
 Through this process, I gained deep insights into enterprise patterns like the **API Gateway pattern**, **Content-Based Router pattern**, and **Claims-Based Identity**, while strengthening my skills in full-stack development, security protocol implementation, Docker orchestration, and system design thinking.
 
-In this article—the **one place where I'm sharing all three projects together**—I'll walk through each journey: the business problem, architectural decisions, implementation details, observed behaviors, challenges I encountered, and the lessons that fundamentally changed how I think about building systems.
+In this article the **one place where I'm sharing all three projects together** I'll walk through each journey: the business problems, architectural decisions, implementation details, observed behaviors, challenges I encountered, and the lessons that fundamentally changed how I think about building systems.
 
 ---
 
@@ -39,7 +39,7 @@ Before diving into configuration screens, it's worth understanding **why API man
 - How do we version the API without breaking existing integrations?
 - How do we add caching, CORS, or IP filtering without touching backend code?
 
-An **API Gateway** solves these concerns by sitting between clients and services. WSO2 API Manager goes further—it's a complete platform for the entire API lifecycle with three core components:
+An **API Gateway** solves these concerns by sitting between clients and services. WSO2 API Manager goes further, it's a complete platform for the entire API lifecycle with three core components:
 
 1. **Publisher Portal**: Where API designers and product managers define resources, attach policies, and manage versions
 2. **Developer Portal**: A self-service catalog where internal teams or external partners discover APIs, generate credentials, and test endpoints
@@ -155,9 +155,9 @@ Beyond basic CRUD and throttling, I experimented with:
 
 2. **Centralized governance scales**: Imagine managing OAuth2, rate limiting, and logging across 50 microservices. A gateway makes this one configuration instead of 50 implementations.
 
-3. **Self-service reduces friction**: The Developer Portal lets consumers discover, test, and integrate without opening support tickets—critical for API-as-a-product models.
+3. **Self-service reduces friction**: The Developer Portal lets consumers discover, test, and integrate without opening support tickets critical for API-as-a-product models.
 
-4. **Standards enable interoperability**: Using OAuth2 and OpenAPI means any HTTP client can integrate—no vendor-specific SDKs required.
+4. **Standards enable interoperability**: Using OAuth2 and OpenAPI means any HTTP client can integrate no vendor-specific SDKs required.
 
 This project taught me to think about APIs as **products with lifecycles**, not just endpoints. You design them, version them, market them, monitor them, and retire them—just like physical products.
 
