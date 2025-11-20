@@ -10,7 +10,7 @@ That's why I decided to immerse myself in **WSO2's open-source pruducts**, a lea
 
 ## The Learning Journey: Three Projects, One Ecosystem
 
-To truly understand these tools beyond surface-level tutorials, I built **three interconnected, production-realistic projects**:
+To truly understand these tools beyond surface-level tutorials, I built **three production-realistic projects**:
 
 1. **API Lifecycle Management** with WSO2 API Manager—handling everything from design and security to throttling and analytics
 2. **Intelligent Message Routing** with WSO2 Micro Integrator—implementing enterprise integration patterns for service mediation
