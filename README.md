@@ -221,7 +221,7 @@ The hub inspects `type` and routes to the appropriate service, wrapping response
 
 #### The Core Sequence
 
-Using WSO2's **Integration Studio** (an Eclipse-based IDE), I designed the mediation sequence visually, which generates XML configurations:
+Using WSO2's VS Code extension (Micro Integrator for VS Code), I designed the mediation sequence visually, which generates XML configurations:
 
 ```xml
 <sequence name="MessageRoutingSequence">
