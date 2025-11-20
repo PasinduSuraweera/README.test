@@ -2,7 +2,7 @@
 
 ## Introduction: Why Integration Matters in Modern Software
 
-As a software engineering student passionate about building secure and scalable systems, I've always been fascinated by how large organizations manage complexity in their digital ecosystems. In today's cloud-native world, applications are no longer monolithic—they're distributed networks of microservices, legacy systems, third-party APIs, and mobile clients. The challenge isn't just building these components; it's orchestrating them to work together securely, reliably, and at scale.
+As an undergrad student passionate about building secure and scalable systems, I've always been fascinated by how large organizations manage complexity in their digital ecosystems. In today's cloud-native world, applications are no longer monolithic—they're distributed networks of microservices, legacy systems, third-party APIs, and mobile clients. The challenge isn't just building these components; it's orchestrating them to work together securely, reliably, and at scale.
 
 Integration challenges—like exposing APIs safely, routing data between heterogeneous services, and controlling user access across multiple applications—are at the heart of modern enterprise architecture. A single e-commerce transaction might touch a dozen services: inventory management, payment processing, fraud detection, shipping logistics, and customer notifications. Each has different protocols, data formats, and security requirements. Without proper integration infrastructure, this complexity becomes unmanageable technical debt.
 
