@@ -16,7 +16,7 @@ To truly understand these tools beyond surface-level tutorials, I built **three 
 2. **Intelligent Message Routing** with WSO2 Micro Integrator—implementing enterprise integration patterns for service mediation
 3. **Secure Authentication & Authorization** with WSO2 Identity Server and Next.js—building a modern, role-based access control system
 
-Each project simulates real-world scenarios I've encountered in research and internships: how do you protect legacy services with modern OAuth2 security? How do you decouple tightly-coupled systems? How do you implement single sign-on across multiple applications without reinventing authentication?
+Each project simulates real-world scenarios I've encountered in research: how do you protect legacy services with modern OAuth2 security? How do you decouple tightly-coupled systems? How do you implement single sign-on across multiple applications without reinventing authentication?
 
 This wasn't just about following documentation—I aimed to replicate realistic workflows, from initial configuration and custom code integration to **testing system boundaries** like rate limits, concurrent loads, and error scenarios. I wrote automated tests, load generation scripts, and comprehensive documentation for each repository. The goal was simple: if I handed these projects to a colleague, they should be able to understand and run them in under 30 minutes.
 
