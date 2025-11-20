@@ -178,7 +178,7 @@ Picture a typical e-commerce platform:
 - Each destination speaks a different protocol: REST, SOAP, JMS queues, FTP drops
 - You need transformation, enrichment, error handling, and retry logic
 
-The naive approach is **point-to-point integration**: each system calls others directly. With 10 systems, that's 10×9=90 potential connections—a maintenance nightmare. Add one new system? You touch 10 codebases.
+The naive approach is **point-to-point integration**: each system calls others directly. With 10 systems, that's 10×9=90 potential connections a maintenance nightmare. Add one new system? You touch 10 codebases.
 
 The **Enterprise Service Bus (ESB)** pattern solves this with a **centralized mediation layer**. Systems publish messages to the bus and consume from it, never talking directly. The bus handles routing, transformation, and orchestration. Add a new system? Configure the bus, zero changes elsewhere.
 
@@ -326,7 +326,7 @@ No client changes, no changes to other services. This **loose coupling** is the 
 
 2. **Declarative flows are maintainable**: The XML configuration is verbose but clear. Anyone can understand the flow without parsing code.
 
-3. **Protocol translation is powerful**: The ability to receive HTTP, call SOAP, write to Kafka, and respond with JSON—all in one flow—eliminates so much glue code
+3. **Protocol translation is powerful**: The ability to receive HTTP, call SOAP, write to Kafka, and respond with JSON all in one flow—eliminates so much glue code
 
 4. **Observability is non-negotiable**: In distributed systems, you need to trace requests across services. Micro Integrator's built-in correlation IDs made debugging trivial.
 
@@ -356,7 +356,7 @@ This is the domain of **Identity and Access Management (IAM)**. Every organizati
 - **Standards**: SCIM 2.0 for user provisioning, FIDO2 for passwordless, JWT for tokens
 - **Features**: Multi-factor authentication, risk-based adaptive auth, consent management, identity federation, fine-grained authorization
 
-It serves as the **single source of truth for identity** across all applications—eliminating the anti-pattern of each app maintaining its own user database.
+It serves as the **single source of truth for identity** across all applications eliminating the anti-pattern of each app maintaining its own user database.
 
 ### The Application: Role-Based Access Control in Next.js
 
@@ -459,7 +459,7 @@ const handler = NextAuth({
 
 Key points:
 
-- **Well-known endpoint**: OIDC providers expose a discovery document with all endpoint URLs—no hardcoding
+- **Well-known endpoint**: OIDC providers expose a discovery document with all endpoint URLs no hardcoding
 - **Scope**: `openid` (required), `profile`, `email`, `groups` (custom scope for roles)
 - **Callbacks**: NextAuth's JWT and session callbacks let you customize token/session contents
 
@@ -554,7 +554,7 @@ await fetch(`https://localhost:9443/oidc/logout?id_token_hint=${idToken}`);
 router.push("/");
 ```
 
-This prevents scenarios where users think they've logged out but remain authenticated at the IdP level—a common vulnerability.
+This prevents scenarios where users think they've logged out but remain authenticated at the IdP level a common vulnerability.
 
 ### Advanced Security Features I Explored
 
@@ -570,7 +570,7 @@ This prevents scenarios where users think they've logged out but remain authenti
 
 ### Why Externalizing Identity Matters
 
-Before this project, I'd built apps with **homegrown authentication**—password hashing, JWT signing, role checking scattered across route handlers. It worked, but:
+Before this project, I'd built apps with **homegrown authentication** password hashing, JWT signing, role checking scattered across route handlers. It worked, but:
 
 - **Security**: Did I implement constant-time password comparison? Proper salt generation? Token rotation?
 - **Features**: Want to add social login? MFA? Good luck retrofitting.
@@ -581,10 +581,10 @@ Before this project, I'd built apps with **homegrown authentication**—password
 
 - Security experts maintain the IdP (WSO2's team includes IETF spec authors)
 - Features are configuration, not code
-- All apps use the same identity source—single point of control
+- All apps use the same identity source single point of control
 - Built-in compliance features (audit logs, consent, GDPR tools)
 
-Your application code becomes **identity-agnostic**—it trusts tokens from the IdP and focuses on business logic.
+Your application code becomes **identity-agnostic** it trusts tokens from the IdP and focuses on business logic.
 
 ### Key Takeaways from Identity Management
 
@@ -633,7 +633,7 @@ Imagine a mobile app user browsing products:
    - User sees products with real-time stock and personalized prices
    - All security, routing, and orchestration happened transparently
 
-No single component handles everything—each does one thing well, and they compose beautifully through **open standards** (OAuth2, REST, JSON).
+No single component handles everything each does one thing well, and they compose beautifully through **open standards** (OAuth2, REST, JSON).
 
 ### Technical Deep Dive: How Components Communicate
 
@@ -838,7 +838,7 @@ This rounds out the DevOps story.
 
 ## Conclusion: Why This Matters for My Career
 
-These projects represent more than technical exercises—they're **proof of capability** in areas critical to modern software engineering:
+These projects represent more than technical exercises they're **proof of capability** in areas critical to modern software engineering:
 
 ### Skills Demonstrated
 
