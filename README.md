@@ -866,19 +866,6 @@ The patterns I explored map directly to what enterprises need:
 - **API economy**: Treating APIs as products
 
 Companies like Stripe, Twilio, and Shopify have built billion-dollar businesses on these foundations.
-
-### What Recruiters Should Notice
-
-1. **End-to-end thinking**: I don't just write code—I architect, document, test, and deploy complete systems
-
-2. **Open-source proficiency**: WSO2 is enterprise-grade, used by Fortune 500 companies. This isn't toy technology.
-
-3. **Initiative**: These projects were self-motivated, not assignments. I identified a knowledge gap and filled it.
-
-4. **Production mindset**: I think about security, scalability, observability, and operations—not just features.
-
-5. **Communication**: Clear documentation and this article show I can explain complex topics—essential for senior IC or leadership roles.
-
 ---
 
 ## Let's Connect
