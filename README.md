@@ -504,23 +504,18 @@ Once authenticated, the application extracts roles from the session and conditio
 **Admin Dashboard**:
 
 ![Admin Dashboard](https://raw.githubusercontent.com/PasinduSuraweera/wso2-identity-server-nextjs-demo/main/screenshots/(11)Admin%20dashboard.png)  
-*Role-specific admin interface—notice the management sections not visible to regular users*
+*Role-specific admin interface*
 
 Features:
-- User management panel
-- System analytics
-- Configuration tools
-- Audit logs
-
+- Admin panel (to be scaled)
+  
 **User Dashboard**:
 
 ![User Dashboard](https://raw.githubusercontent.com/PasinduSuraweera/wso2-identity-server-nextjs-demo/main/screenshots/(10)User%20dashboard.png)  
 *Restricted view for standard users—clean, focused on their data*
 
 Features:
-- Personal profile
-- Usage statistics
-- Limited read-only views
+- User Panel (to be scaled)
 
 The logic is simple middleware:
 
